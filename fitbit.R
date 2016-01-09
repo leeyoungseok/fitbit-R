@@ -3,7 +3,7 @@ library("fitbitScraper")
 install.packages("ggplot2")
 library("ggplot2")  
 
-cookie <- login(email="yslee1225@gmail.com", password="your password")  
+cookie <- login(email="your id @ fitbit", password="your password")  
 
 df <- get_intraday_data(cookie, what="steps", date="2015-10-21")  
 ggplot(df, aes(x=time, y=steps)) + geom_bar(stat="identity") 
